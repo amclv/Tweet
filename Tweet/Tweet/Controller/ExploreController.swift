@@ -16,8 +16,12 @@ class ExploreController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemTeal
+        configureUI()
     }
     
     // MARK: - Helpers
+    func configureUI() {
+        view.backgroundColor = .systemBackground
+        navigationItem.title = "Explore"
+    }
 }

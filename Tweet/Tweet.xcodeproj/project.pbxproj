@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ADC929724FC1AD000E9AE4F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC929624FC1AD000E9AE4F /* Extensions.swift */; };
+		1ADC929C24FC248400E9AE4F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC929B24FC248400E9AE4F /* LoginController.swift */; };
+		1ADC929E24FC24D600E9AE4F /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC929D24FC24D600E9AE4F /* RegisterController.swift */; };
+		1ADC92A024FC2E5C00E9AE4F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC929F24FC2E5C00E9AE4F /* Utilities.swift */; };
 		5D4FF02D24FB6E050009C5E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FF02C24FB6E050009C5E3 /* AppDelegate.swift */; };
 		5D4FF02F24FB6E050009C5E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FF02E24FB6E050009C5E3 /* SceneDelegate.swift */; };
 		5D4FF03624FB6E060009C5E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D4FF03524FB6E060009C5E3 /* Assets.xcassets */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ADC929624FC1AD000E9AE4F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Utilities/Extensions.swift; sourceTree = SOURCE_ROOT; };
+		1ADC929B24FC248400E9AE4F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1ADC929D24FC24D600E9AE4F /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		1ADC929F24FC2E5C00E9AE4F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Tweet/Controller/Authentication/Utilities.swift; sourceTree = SOURCE_ROOT; };
 		5D4FF02924FB6E050009C5E3 /* Tweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4FF02C24FB6E050009C5E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D4FF02E24FB6E050009C5E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ADC929824FC246500E9AE4F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1ADC929B24FC248400E9AE4F /* LoginController.swift */,
+				1ADC929D24FC24D600E9AE4F /* RegisterController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		5D4FF02024FB6E050009C5E3 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +105,7 @@
 		5D4FF04324FB6F940009C5E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1ADC929824FC246500E9AE4F /* Authentication */,
 				5D4FF04124FB6F850009C5E3 /* MainTabController.swift */,
 				5D4FF04424FB6FB50009C5E3 /* ExploreController.swift */,
 				5D4FF04624FB6FC00009C5E3 /* NotificationsController.swift */,
@@ -128,6 +146,8 @@
 		5DF5C14524FB777E00159F8E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1ADC929624FC1AD000E9AE4F /* Extensions.swift */,
+				1ADC929F24FC2E5C00E9AE4F /* Utilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -202,9 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ADC929E24FC24D600E9AE4F /* RegisterController.swift in Sources */,
 				5D4FF02D24FB6E050009C5E3 /* AppDelegate.swift in Sources */,
+				1ADC92A024FC2E5C00E9AE4F /* Utilities.swift in Sources */,
 				5D4FF04524FB6FB50009C5E3 /* ExploreController.swift in Sources */,
 				5D4FF04724FB6FC00009C5E3 /* NotificationsController.swift in Sources */,
+				1ADC929724FC1AD000E9AE4F /* Extensions.swift in Sources */,
+				1ADC929C24FC248400E9AE4F /* LoginController.swift in Sources */,
 				5D4FF02F24FB6E050009C5E3 /* SceneDelegate.swift in Sources */,
 				5D4FF04924FB6FCC0009C5E3 /* ConversationsController.swift in Sources */,
 				5D4FF04224FB6F850009C5E3 /* MainTabController.swift in Sources */,

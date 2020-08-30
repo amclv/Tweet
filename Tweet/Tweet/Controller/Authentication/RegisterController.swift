@@ -1,5 +1,5 @@
 //
-//  NotificationsController.swift
+//  RegisterController.swift
 //  Tweet
 //
 //  Created by Aaron Cleveland on 8/30/20.
@@ -9,8 +9,7 @@
 import Foundation
 import UIKit
 
-class NotificationsController: UIViewController {
-    
+class RegisterController: UIViewController {
     // MARK: - Properties
     
     // MARK: - Lifecycle
@@ -19,9 +18,11 @@ class NotificationsController: UIViewController {
         configureUI()
     }
     
+    // MARK: - Selectors
+    
+    
     // MARK: - Helpers
-    func configureUI() {
-        view.backgroundColor = .systemBackground
-        navigationItem.title = "Notifications"
+    private func configureUI() {
+        view.backgroundColor = .twitterBlue
     }
 }
