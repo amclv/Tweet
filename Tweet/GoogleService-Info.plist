@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>129579864238-q1i4nhdtop3jg8i5moi6j56bpebndbd8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.129579864238-q1i4nhdtop3jg8i5moi6j56bpebndbd8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDV72zZmHT8YwZTc7qlRBAr3yrQvGYPtjg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>129579864238</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.AaronCleveland.Tweet</string>
+	<key>PROJECT_ID</key>
+	<string>tweet-c48d4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tweet-c48d4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:129579864238:ios:a7edc3b265649c6df7dd3f</string>
+	<key>DATABASE_URL</key>
+	<string>https://tweet-c48d4.firebaseio.com</string>
+</dict>
+</plist>
