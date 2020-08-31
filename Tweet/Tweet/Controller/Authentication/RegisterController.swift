@@ -9,11 +9,14 @@
 import Foundation
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
+import FirebaseStorage
 
 class RegisterController: UIViewController {
     
     // MARK: - Properties
     private let imagePicker = UIImagePickerController()
+    private var profileImage: UIImage?
     
     private let addImageButton: UIButton = {
         let button = UIButton(type: .system)
@@ -104,20 +107,21 @@ class RegisterController: UIViewController {
     }
     
     @objc func handleRegistration() {
-        print("Registration Logic..")
         guard let email = emailTextField.text,
-            let password = passwordTextField.text else { return }
+            let password = passwordTextField.text,
+            let fullname = fullnameTextField.text,
+            let username = usernameTextField.text,
+            let profileImage = profileImage else { return }
         
-        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-            if let error = error {
-                print("Debug: Error is \(error.localizedDescription)")
-                return
-            }
-            
-            print("Debug: Successfully registed user")
+        let credentials = AuthCredentials(email: email,
+                                          password: password,
+                                          fullname: fullname,
+                                          username: username,
+                                          profileImage: profileImage)
+        AuthService.shared.registerUser(credentials: credentials) { (error, ref) in
+            print("Debug: Sign up successfully")
+            print("Debug: Handle update user interface here")
         }
-        print("Debug: Email is \(email)")
-        print("Debug: Password is \(password)")
     }
     
     // MARK: - Helpers
@@ -162,6 +166,8 @@ extension RegisterController: UIImagePickerControllerDelegate {
     // this gives us the ability to access the media we select.
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let profileImage = info[.editedImage] as? UIImage else { return }
+        
+        self.profileImage = profileImage
         
         addImageButton.layer.cornerRadius = 150 / 2
         addImageButton.layer.masksToBounds = true
