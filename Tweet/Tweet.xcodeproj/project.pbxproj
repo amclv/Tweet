@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A09C72224FCA427006CA736 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A09C72124FCA427006CA736 /* GoogleService-Info.plist */; };
+		1A30AEF424FCA82600B5B88B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A30AEF324FCA82600B5B88B /* GoogleService-Info.plist */; };
 		1ADC929724FC1AD000E9AE4F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC929624FC1AD000E9AE4F /* Extensions.swift */; };
 		1ADC929C24FC248400E9AE4F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC929B24FC248400E9AE4F /* LoginController.swift */; };
 		1ADC929E24FC24D600E9AE4F /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC929D24FC24D600E9AE4F /* RegisterController.swift */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A09C72124FCA427006CA736 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1A30AEF324FCA82600B5B88B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1ADC929624FC1AD000E9AE4F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Utilities/Extensions.swift; sourceTree = SOURCE_ROOT; };
 		1ADC929B24FC248400E9AE4F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		1ADC929D24FC24D600E9AE4F /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		5D4FF02B24FB6E050009C5E3 /* Tweet */ = {
 			isa = PBXGroup;
 			children = (
-				1A09C72124FCA427006CA736 /* GoogleService-Info.plist */,
+				1A30AEF324FCA82600B5B88B /* GoogleService-Info.plist */,
 				5DF5C14524FB777E00159F8E /* Utilities */,
 				5DF5C14424FB777200159F8E /* API */,
 				5DF5C14324FB776A00159F8E /* ViewModel */,
@@ -168,7 +168,6 @@
 				CE2DBF45714548C31B860B28 /* Pods-Tweet.debug.xcconfig */,
 				2EFCD6594F343F8E250D9209 /* Pods-Tweet.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -242,7 +241,7 @@
 			files = (
 				5D4FF03924FB6E060009C5E3 /* LaunchScreen.storyboard in Resources */,
 				5D4FF03624FB6E060009C5E3 /* Assets.xcassets in Resources */,
-				1A09C72224FCA427006CA736 /* GoogleService-Info.plist in Resources */,
+				1A30AEF424FCA82600B5B88B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
