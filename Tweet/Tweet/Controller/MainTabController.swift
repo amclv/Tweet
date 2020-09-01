@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class MainTabController: UITabBarController {
     
@@ -25,9 +27,34 @@ class MainTabController: UITabBarController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemOrange
-        configureViewControllers()
-        configureUI()
+//        logUserOut()
+        view.backgroundColor = .twitterBlue
+        authenticateUserAndConfigure()
+    }
+    
+    // MARK: - API
+    // Checks to see if the user is logged in. If not than we present the login screen to allow them to regist or login.
+    func authenticateUserAndConfigure() {
+        if Auth.auth().currentUser == nil {
+            DispatchQueue.main.async {
+                let nav = UINavigationController(rootViewController: LoginController())
+                nav.modalPresentationStyle = .fullScreen
+                self.present(nav, animated: true, completion: nil)
+            }
+            print("Debug: User is not logged int")
+        } else {
+            configureViewControllers()
+            configureUI()
+            print("Debug: User is logged in")
+        }
+    }
+    
+    func logUserOut() {
+        do {
+            try Auth.auth().signOut()
+        } catch let error {
+            print("Debug: Failed to sign out with error \(error.localizedDescription)")
+        }
     }
     
     // MARK: - Selectors

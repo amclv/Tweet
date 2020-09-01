@@ -23,6 +23,13 @@ struct AuthService {
     // creating a static allows us to only get instance once. 
     static let shared = AuthService()
     
+    func logUserIn(withEmail email: String, password: String, completion: AuthDataResultCallback?) {
+        Auth.auth().signIn(withEmail: email, password: password, completion: completion)
+        
+        
+        print("Debug: Email is \(email), password: \(password)")
+    }
+    
     func registerUser(credentials: AuthCredentials, completion: @escaping(Error?, DatabaseReference) -> Void) {
         let email = credentials.email
         let password = credentials.password
