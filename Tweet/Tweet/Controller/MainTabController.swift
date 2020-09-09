@@ -30,9 +30,14 @@ class MainTabController: UITabBarController {
 //        logUserOut()
         view.backgroundColor = .twitterBlue
         authenticateUserAndConfigure()
+        fetchUser()
     }
     
     // MARK: - API
+    func fetchUser() {
+        UserService.shared.fetchUser()
+    }
+    
     // Checks to see if the user is logged in. If not than we present the login screen to allow them to regist or login.
     func authenticateUserAndConfigure() {
         if Auth.auth().currentUser == nil {
